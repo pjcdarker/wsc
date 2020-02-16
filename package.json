@@ -1,0 +1,21 @@
+{
+  "name": "spider",
+  "version": "1.0.0",
+  "description": "spider",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "jd": "node page/jd/index.js"
+  },
+  "keywords": [
+    ""
+  ],
+  "author": "pjcdarker",
+  "license": "MIT",
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "puppeteer": "^2.1.1",
+    "puppeteer-core": "^2.1.1",
+    "winston": "^3.2.1"
+  }
+}
