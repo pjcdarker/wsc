@@ -10,7 +10,6 @@ function save(device) {
         return;
     }
 
-    // 是否已存在
     deviceRepository.isExist([device.make, device.model], isExist => {
         log.info('isExist: ' + isExist);
         if (!isExist) {
