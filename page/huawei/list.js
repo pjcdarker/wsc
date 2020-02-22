@@ -8,7 +8,6 @@ const handlePage = async (page, itemBrowserPage, url, hasNext) => {
     let handleData = async () => {
         const itemPage = await page.evaluate(() => {
             let aEles = document.querySelectorAll('#pro-list a');
-            // let nextEle = document.querySelector('#search-pager .next');
             let currEle = document.querySelector('#search-pager .page-number.pgCurrent');
             let result = {
                 urls: [],
@@ -16,10 +15,6 @@ const handlePage = async (page, itemBrowserPage, url, hasNext) => {
             };
 
             aEles.forEach(ee => {
-                if (result.urls.length) {
-                    return;
-                }
-
                 result.urls.push(String(ee.href));
             })
 

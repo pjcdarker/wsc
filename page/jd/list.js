@@ -15,9 +15,6 @@ const handlePage = async (page, url) => {
         };
 
         aEles.forEach(ee => {
-            if (result.urls.length) {
-                return;
-            }
             let url = String(ee.href)
             if (url.startsWith('https://item.jd.com/')) {
                 result.urls.push(url)
