@@ -54,7 +54,10 @@ class Device {
     }
 
     setPrice(price) {
-        this.price = parseInt(String(price).replace('¥', ''));
+        this.price = parseInt(String(price)
+            .replace('¥', '')
+            .replace('元', '')
+            .replace('；', ''));
     }
 }
 
